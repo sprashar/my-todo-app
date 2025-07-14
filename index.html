@@ -7,7 +7,12 @@
     <title>Vite + React + TS</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <div id="root"></div> <!-- This is where the React app will be mounted -->
+    <script type="module" src="/src/main.tsx"></script> <!-- Entry point for the React app -->
+    <link rel="stylesheet" href="/src/style.css" /> <!-- Link to the CSS file -->
+    <script type="module" src="/src/App.tsx"></script> <!-- Import the main App component -->
+    <script type="module" src="/src/vite-env.d.ts"></script> <!-- TypeScript definitions for Vite -->
+    <script type="module" src="/src/reactLogo.svg"></script> <!-- Import the React logo -->
+    <script type="module" src="/src/reactRefresh.tsx"></script> <!-- React refresh for hot reloading -->
+    </body>
 </html>
